@@ -29,17 +29,17 @@ All passing? : Yes
 
 ## **What I built:**
 - Plotted the observed radioactive decay data from `decay_observed.csv` alongside the analytical decay law ($N_0 e^{-\lambda t}$) using a $1 \times 2$ subplot with shared axes[cite: 1].
-- Created a Snakemake workflow (`Snakefile`) to automate the generation of `figure.png` from the input dataset and script[cite: 1].
+- Created a Snakemake workflow (`Snakefile`) to automate the generation of `figure.png` from the input dataset and script.
 
 ## **Data observation & comparison:**
-- **Observed data:** Shows a radioactive decay process where particle counts decrease over time[cite: 1].
-- **Comparison:** The observed scatter points match the smooth theoretical analytical curve closely on the same scale[cite: 1].
+- **Observed data:** Shows a radioactive decay process where particle counts decrease over time.
+- **Comparison:** The observed scatter points match the smooth theoretical analytical curve closely on the same scale.
 
 ## **Snakemake pipeline:**
-- The pipeline automates figure building and uses file timestamps to only rerun the script when input files or scripts change[cite: 1].
-- Re-running when nothing changed reports `Nothing to be done`[cite: 1].
+- The pipeline automates figure building and uses file timestamps to only rerun the script when input files or scripts change.
+- Re-running when nothing changed reports `Nothing to be done`.
 
 ## **Conclusion:**
-- I read observation data and successfully verified that the empirical data follows the analytical decay law ($N(t) = N_0 e^{-\lambda t}$)[cite: 1].
-- I automated the plotting process using Snakemake, ensuring reproducible and dependency-aware data visualisation[cite: 1].
-- I updated the repository structure, verified the pipeline execution, and committed all required files to GitHub[cite: 1].
+- I read observation data and successfully verified that the empirical data follows the analytical decay law ($N(t) = N_0 e^{-\lambda t}$).
+- I automated the plotting process using Snakemake, ensuring reproducible and dependency-aware data visualisation.
+- I updated the repository structure, verified the pipeline execution, and committed all required files to GitHub.
