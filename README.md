@@ -43,3 +43,22 @@ All passing? : Yes
 - I read observation data and successfully verified that the empirical data follows the analytical decay law ($N(t) = N_0 e^{-\lambda t}$).
 - I automated the plotting process using Snakemake, ensuring reproducible and dependency-aware data visualisation.
 - I updated the repository structure, verified the pipeline execution, and committed all required files to GitHub.
+---
+## PW2 - Lab A: Motion from Tracking Data
+
+## **What I built:**
+- Loaded time and position data from `freefall.csv`.
+- Calculated velocity and acceleration using `np.gradient()`.
+- Calculated the mean acceleration and compared it with the theoretical value of `-9.81 m/s²`.
+- Integrated acceleration to recover velocity using `cumulative_trapezoid()`.
+- Created a figure with position, velocity, and acceleration plotted against time.
+
+## **Data observation & comparison:**
+- The calculated acceleration is close to the theoretical gravitational acceleration of -9.81 m/s².
+- However, the acceleration data is not perfectly constant. It shows some fluctuations because the velocity and acceleration are calculated numerically from the measured position data. Taking derivatives can make small measurement errors more noticeable.
+- The recovered velocity and position can also be compared with the original measured data. The recovered values follow the general behavior of the original motion, showing that numerical differentiation and integration can be used to analyze the free-fall data.
+- The acceleration plot also includes a horizontal line at -9.81 m/s², which makes it easier to visually compare the calculated acceleration with the theoretical value.
+
+## **Conclusion:**
+- I learned how numerical methods can be used to analyze experimental motion data.
+- By taking numerical derivatives, I obtained velocity and acceleration from position data. Then, by numerical integration, I recovered velocity and position from acceleration.
