@@ -62,3 +62,29 @@ All passing? : Yes
 ## **Conclusion:**
 - I learned how numerical methods can be used to analyze experimental motion data.
 - By taking numerical derivatives, I obtained velocity and acceleration from position data. Then, by numerical integration, I recovered velocity and position from acceleration.
+
+## PW2 - Lab B: Optimization in Chemistry
+#### Part 2A: Convex Function
+
+The function f(x) = (x - 3)^2 + 1 has a unique minimum at x = 3, where f(x) = 1. Gradient Descent, Newton's method, and SLSQP converged to the same minimum.
+
+#### Part 2B: Non-Convex Function
+
+The function g(x) = x^4 - 3x^2 + x + 5 has
+multiple stationary points.
+
+Starting from x0 = 0, Gradient Descent converged
+to a local minimum near x = -1.3008.
+Newton's method converged to a local maximum
+near x = 0.1699, because the second derivative
+at this point is negative.
+SLSQP converged to the minimum near x = -1.3008.
+
+Starting from x0 = 2, Gradient Descent and
+Newton's method converged to a local minimum
+near x = 1.1309. SLSQP converged to the minimum
+near x = -1.3008.
+
+These results show that the starting point and
+the optimization method can affect the result
+for a non-convex function.
