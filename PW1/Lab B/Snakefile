@@ -1,4 +1,4 @@
 rule plot:
     input: "decay_observed.csv"
     output: "figure.png"
-    script: "python plot.py"
+    shell: "python plot.py"
